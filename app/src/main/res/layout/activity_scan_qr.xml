@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DD262626"
+    android:orientation="vertical" >
+
+    <SurfaceView
+        android:id="@+id/scanQrCode_surfaceView_sfv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/scanQrCode_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="#DD262626" />
+
+        <LinearLayout
+            android:id="@+id/scanQrCode_capture_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/scanQrCode_top"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#DD262626"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扫一扫"
+                    android:textColor="#FAFAFA"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DD262626"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="40dp"
+                    android:maxWidth="40dp"
+                    android:src="@mipmap/ico_scan" />
+
+                <TextView
+                    android:id="@+id/scanQrCode_scanDsp_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="将二维码放入框内,即可自动扫描"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/scanQrCode_crop_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="2dp" >
+
+                <ImageView
+                    android:id="@+id/scanQrCode_scan_line_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:src="@mipmap/qr_scan_line" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DD262626"
+                android:paddingTop="40dp" >
+
+                <TextView
+                    android:id="@+id/scanQrCode_cancel_btn"
+                    style="@style/btn_half_trans_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="取消扫描" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DD262626"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp" >
+
+                <ToggleButton
+                    android:id="@+id/scanQrCode_flashlight_tbtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:checked="false"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/togglebutton_light_style"
+                    android:textColor="#999999"
+                    android:textOff="打开照明"
+                    android:textOn="关闭照明" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="#DD262626" />
+    </LinearLayout>
+
+</RelativeLayout>

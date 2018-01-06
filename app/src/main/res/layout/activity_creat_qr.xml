@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_creat_qr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ren.myqrtest.activity.CreateQRActivity">
+
+    <EditText
+        android:id="@+id/edt_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:hint="请输入内容"/>
+
+    <Button
+        android:id="@+id/btn_createNormalQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生成普通二维码"/>
+
+    <Button
+        android:id="@+id/btn_createLogoQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生成带logo二维码"/>
+
+    <ImageView
+        android:id="@+id/img_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

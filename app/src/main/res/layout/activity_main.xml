@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ren.myqrtest.activity.MainActivity">
+
+    <Button
+        android:id="@+id/btn_scanQr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="扫描二维码"/>
+
+    <Button
+        android:id="@+id/btn_scanPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="识别图中二维码"/>
+
+    <Button
+        android:id="@+id/btn_createQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生成二维码"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"/>
+
+</LinearLayout>

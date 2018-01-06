@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@color/translate</item>
+    </style>
+
+    <style name="btn_half_trans_style" parent="btn_parent_style">
+        <item name="android:background">@drawable/btn_while_half_trans_selector</item>
+        <item name="android:textColor">#88000000</item>
+    </style>
+
+    <!-- 按钮标准格式 -->
+    <style name="btn_parent_style">
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--全屏加透明-->
+    <style name="TranslucentFullScreenTheme" parent="FullScreenTheme">
+        <item name="android:windowBackground">@color/translate</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!--全屏-->
+    <style name="FullScreenTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--透明，有任务栏电量时间等-->
+    <style name="NoTitleTranslucentTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/translate</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scan_qrphoto_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@drawable/scanqr_loading_gackground"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:indeterminateDrawable="@anim/progress_small"
+            android:indeterminateDuration="900"
+            android:interpolator="@android:anim/linear_interpolator"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="正在处理..."
+            android:textColor="#fff"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</RelativeLayout>
+
