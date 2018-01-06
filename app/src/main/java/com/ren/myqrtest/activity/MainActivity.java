@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
     private String imgPath = "http://cs.vmoiver.com/Uploads/Banner/2016/12/26/5860936a7e30d.jpg";//网络图片
 //    private String imgPath = "/storage/emulated/0/Pictures/Screenshots/Screenshot_20171026-143630.png";//本地图片
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
